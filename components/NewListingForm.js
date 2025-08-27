@@ -40,20 +40,20 @@ const NewListingForm = () => {
       <h2 className="text-2xl font-bold text-center text-gray-800">Create a New Food Listing</h2>
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="title" className="text-sm font-medium text-gray-700">Title</label>
-          <input type="text" name="title" onChange={handleChange} required className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="e.g., Leftover Vegetable Curry" />
+          <label htmlFor="title" className="text-sm font-medium text-gray-600">Title</label>
+          <input type="text" name="title" onChange={handleChange} required className="text-gray-700 w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="e.g., Leftover Vegetable Curry" />
         </div>
         <div>
           <label htmlFor="description" className="text-sm font-medium text-gray-700">Description</label>
-          <textarea name="description" rows="3" onChange={handleChange} required className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="Details about the food, ingredients, etc."></textarea>
+          <textarea name="description" rows="3" onChange={handleChange} required className="text-gray-700 w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="Details about the food, ingredients, etc."></textarea>
         </div>
         <div>
           <label htmlFor="quantity" className="text-sm font-medium text-gray-700">Quantity</label>
-          <input type="text" name="quantity" onChange={handleChange} required className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="e.g., Serves 15-20 people" />
+          <input type="text" name="quantity" onChange={handleChange} required className=" text-gray-700 w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="e.g., Serves 15-20 people" />
         </div>
         <div>
           <label htmlFor="pickupTime" className="text-sm font-medium text-gray-700">Latest Pickup Time</label>
-          <input type="text" name="pickupTime" onChange={handleChange} required className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="e.g., By 10 PM tonight" />
+          <input type="text" name="pickupTime" onChange={handleChange} required className="text-gray-700 w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500" placeholder="e.g., By 10 PM tonight" />
         </div>
 
         {error && <p className="text-sm text-red-600">{error}</p>}

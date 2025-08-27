@@ -18,7 +18,7 @@ const LoginForm=()=>{
 
     try {
       // Send login request to the backend
-      const response = await axios.post(`process.env.NEXT_PUBLIC_API_URL/api/auth/login`, formData);
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, formData);
 
       login(response.data.token);
     } catch (err) {
